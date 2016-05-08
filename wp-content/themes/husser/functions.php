@@ -137,13 +137,16 @@ function block3_func( $atts ) {
         'title' => 'Title',
         'description' => 'Description',
         'link' => 'link',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-3">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -165,13 +168,16 @@ function block6_func( $atts ) {
         'title' => 'Title',
         'description' => 'Description',
         'link' => 'link',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-6">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -192,13 +198,16 @@ function block9_func( $atts ) {
         'title' => 'Title',
         'description' => 'Description',
         'link' => 'link',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-9">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -220,13 +229,16 @@ function block12_func( $atts ) {
         'title' => 'Title',
         'description' => 'Description',
         'link' => 'link',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-12">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -247,13 +259,16 @@ function block3normal_func( $atts ) {
         'image' => '',
         'title' => 'Title',
         'description' => 'Description',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-3">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -273,13 +288,16 @@ function block6normal_func( $atts ) {
         'image' => '',
         'title' => 'Title',
         'description' => 'Description',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-6">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -298,13 +316,16 @@ function block9normal_func( $atts ) {
         'image' => '',
         'title' => 'Title',
         'description' => 'Description',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-9">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -324,13 +345,16 @@ function block12normal_func( $atts ) {
         'image' => '',
         'title' => 'Title',
         'description' => 'Description',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-12">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='<p>'.$description.'</p>';
@@ -354,13 +378,16 @@ function block3sm_func( $atts ) {
     extract(shortcode_atts(array(
         'image' => '',
         'title' => 'Title',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-3">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='</div>';
@@ -378,13 +405,16 @@ function block6sm_func( $atts ) {
     extract(shortcode_atts(array(
         'image' => '',
         'title' => 'Title',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-6">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='</div>';
@@ -401,13 +431,16 @@ function block9sm_func( $atts ) {
     extract(shortcode_atts(array(
         'image' => '',
         'title' => 'Title',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-9">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='</div>';
@@ -425,13 +458,16 @@ function block12sm_func( $atts ) {
     extract(shortcode_atts(array(
         'image' => '',
         'title' => 'Title',
+        'animated' => 'true'
     ), $atts));
 
     $html = "";
 
     $html.='<div class="col-md-12">';
     $html.='<div class="mod mod-tile">';
-    $html.='<img src="'.$image.'" alt="">';
+    $html.='<div class="image-wrapper">';
+    $html.='<img src="'.$image.'" '.($animated === "true" ? "class=\"animated\"" : "").' alt="">';
+    $html.='</div>';
     $html.='<div class="wrapper">';
     $html.='<h3>'.$title.'</h3>';
     $html.='</div>';

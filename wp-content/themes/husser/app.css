@@ -2370,3 +2370,30 @@ x-object-fit > .x-object-fit-wider {
 .headroom--unpinned .dl-menuwrapper {
   top:-1000px;
 }
+
+
+/* Image hover effect */
+
+.image-wrapper {
+  overflow:hidden;
+}
+
+.mod-tile img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mod-tile:hover img.animated {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -ms-transform: scale(1.1,1.1); /* IE 9 */
+  -webkit-transform: scale(1.1,1.1); /* Safari */
+  transform: scale(1.1,1.1);
+}
