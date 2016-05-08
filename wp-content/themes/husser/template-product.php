@@ -65,7 +65,9 @@
                 <div class="container-fluid">
                     <div class="container">
                         <div class="col-md-12">
-                            <img src="<?php the_field("big_image"); ?>" alt="">
+                            <div class="image-wrapper">
+                                <img src="<?php the_field("big_image"); ?>" class="animated" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>

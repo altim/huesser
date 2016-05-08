@@ -91,9 +91,11 @@
 
                         for($i=0;$i<count($logos);$i++){
                             ?>
-                                <div class='col-sm-4'>
-                                    <img class='img-responsive partner-logo' src='<?php echo $logos[$i]; ?>'/>
+                            <div class='col-sm-4'>
+                                <div class="image-wrapper">
+                                    <img class='img-responsive partner-logo animated' src='<?php echo $logos[$i]; ?>'/>
                                 </div>
+                            </div>
                             <?php
                         }
                     ?>

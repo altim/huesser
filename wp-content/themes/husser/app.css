@@ -2378,15 +2378,68 @@ x-object-fit > .x-object-fit-wider {
   overflow:hidden;
 }
 
-.mod-tile img {
+.mod-tile:hover img {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+
+  -ms-transform: scale(1,1); /* IE 9 */
+  -webkit-transform: scale(1,1); /* Safari */
+  transform: scale(1,1);
 }
 
 .mod-tile:hover img.animated {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -ms-transform: scale(1.1,1.1); /* IE 9 */
+  -webkit-transform: scale(1.1,1.1); /* Safari */
+  transform: scale(1.1,1.1);
+}
+
+.mod-divider-image img.animated {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -ms-transform: scale(1,1); /* IE 9 */
+  -webkit-transform: scale(1,1); /* Safari */
+  transform: scale(1,1);
+}
+
+.mod-divider-image img.animated:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -ms-transform: scale(1.1,1.1); /* IE 9 */
+  -webkit-transform: scale(1.1,1.1); /* Safari */
+  transform: scale(1.1,1.1);
+}
+
+
+.image-wrapper img.animated {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -ms-transform: scale(1,1); /* IE 9 */
+  -webkit-transform: scale(1,1); /* Safari */
+  transform: scale(1,1);
+}
+
+.image-wrapper img.animated:hover {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;

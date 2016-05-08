@@ -44,7 +44,9 @@
 					<div class="row">
 						<div class="col-sm-4"></div>
 						<div class="col-sm-8 col-md-6">
-							<img class="img-responsive" src="<?php the_field("big_image"); ?>" alt="">
+							<div class="image-wrapper">
+								<img class="img-responsive animated" src="<?php the_field("big_image"); ?>" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
