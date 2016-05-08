@@ -10,11 +10,16 @@
 	-webkit-perspective-origin: 50% 200%;
 	perspective-origin: 50% 200%;
 	position:absolute;
-	top:30px;
+	top:31px;
+	padding-left:15px;
+	padding-right:15px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 .dl-menuwrapper:first-child {
-	margin-right: 100px;
+	/*margin-right: 100px;*/
 }
 
 .dl-menuwrapper button {
@@ -27,7 +32,10 @@
 	position: relative;
 	cursor: pointer;
 	outline: none;
-	float:right;
+	/*float:right;*/
+	position:absolute;
+	top:0px;
+	right:-10px;
 }
 
 .dl-menuwrapper button:hover,
@@ -188,7 +196,7 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 
-    left:10px !important;
+    left:25px !important;
 }
 
 .dl-menuwrapper .dl-menu.dl-menu-toggle {
@@ -233,7 +241,7 @@ All this is done for any sub-level being entered.
 	position: absolute;
 	width: 100%;
 	top: 74px;
-	left: 10px;
+	left: 25px;
 	margin: 0;
 }
 
